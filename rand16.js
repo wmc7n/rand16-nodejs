@@ -19,7 +19,7 @@ module.exports = class rand16 {
 
   shuffle = function(ary) {
     for(var i = ary.length - 1; i > 0; i--){
-      const r = this.next_int(0,i);
+      const r = this.range(0,i);
       const tmp = ary[i];
       ary[i] = ary[r];
       ary[r] = tmp;
