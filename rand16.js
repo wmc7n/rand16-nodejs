@@ -11,7 +11,7 @@ module.exports = class rand16 {
     return this.y = (this.y^(this.y>>>5))^(t^(t>>>14));
   }
 
-  next_int(min, max) {
+  range(min, max) {
 		const a = Math.abs(this.next());
 		const b = max + 1 - min;
 		return min + a - Math.floor(a/b)*b;
