@@ -1,7 +1,7 @@
 module.exports = class rand16 {
 
   constructor(seed = 0x7645) {
-    this.x = 0xD832
+    this.x = 0xD832,
     this.y = seed
   }
 
