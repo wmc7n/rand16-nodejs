@@ -1,7 +1,7 @@
 module.exports = class rand16 {
 
   constructor(seed = 0x7645) {
-    this.x = 0xD832,
+    this.x = 0xD832
     this.y = seed
   }
 
@@ -12,9 +12,9 @@ module.exports = class rand16 {
   }
 
   range(min, max) {
-		const a = Math.abs(this.next());
-		const b = max + 1 - min;
-		return min + a - Math.floor(a/b)*b;
+    const a = Math.abs(this.next());
+    const b = max + 1 - min;
+    return min + a - Math.floor(a/b)*b;
   }
 
   shuffle = function(ary) {
